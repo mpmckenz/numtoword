@@ -19,11 +19,11 @@ for (let tenplace = 2; tenplace < 10; tenplace++) {
         let result = document.createTextNode(count);
         div1.appendChild(result)
     }}
-
-for (let oneplace = 0; oneplace <10; oneplace++) {
-for (let tenplace = 0; tenplace.length; tenplace++) {
-for (let hundredplace = 0; hundredplace < 10; hundredplace++) {
-    count = [hundredplace] + [tenplace] + [oneplace] + ": " + hundreds[hundredplace] + tens[tenplace] + ones[oneplace] + ", ";
+    
+    for (let oneplace = 0; oneplace <10; oneplace++) {
+        for (let tenplace = 0; tenplace < 10; tenplace++) {
+            for (let hundredplace = 1; hundredplace < 10; hundredplace++) {
+    count1 = [hundredplace + 1] + [tenplace + 2] + [oneplace] + ": " + hundreds[hundredplace] + tens[tenplace] + ones[oneplace] + ", ";
     let div1 = document.getElementById("div1");
     let result = document.createTextNode(count);
     div1.appendChild(result);
